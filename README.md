@@ -944,7 +944,7 @@ Whether you're looking for a collaborative team member, a technical consultant, 
 [![Portfolio](https://img.shields.io/badge/Portfolio-jehanzaib.dev-FF6B35?style=for-the-badge&logo=firefox)](https://jehanzaib.dev)
 
 **Last Updated**: October 2025  
-**Author**: Full-Stack DevOps Engineer  
+**Author**: Muhammad Jehanzaib  
 **Status**: Production Verified & Tested
 
 **[⭐ If this helps you, consider starring the repo!]()**

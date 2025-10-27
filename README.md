@@ -20,6 +20,8 @@ KGulf Hosting is a comprehensive hosting service platform engineered to deliver 
 
 ## Architecture Overview
 
+![Architecture Overview](./images/arch-overview.png)  
+
 ### Technology Stack
 
 ```
@@ -66,7 +68,7 @@ KGulf Hosting is a comprehensive hosting service platform engineered to deliver 
 
 ---
 
-## Core Components & Integrations
+## 🔌 Core Components & Integrations
 
 ### 1. **Next.js Frontend Application**
 
@@ -217,6 +219,34 @@ Origin: https://admin.kgulfhost.com
    - Error Count: 0
 ```
 
+#### **WHMCS Integration Screenshots**
+
+![WHMCS Dashboard Overview](./images/whmcs-dashboard-overview.png)  
+*Main admin dashboard showing order statistics, revenue metrics, recent orders, and customer overview*
+
+![WHMCS Product Configuration](./images/whmcs-product-configuration.png)  
+*Product groups configuration, provisioning module setup, product details with pricing and features, module assignment*
+
+![WHMCS Automation Rules](./images/whmcs-automation-rules.png)  
+*Automation hook configuration, trigger conditions, actions to execute, order status automation, renewal automation*
+
+![WHMCS Orders Management](./images/whmcs-orders-automation.png)  
+*Active orders list, order status (Pending, Active, Cancelled), customer details, service details, action buttons*
+
+#### **Proxy Server & Architecture Screenshots**
+
+![Proxy Server Configuration](./images/proxy-server-configuration.png)  
+*Proxy server logs/configuration, environment variables setup, provider API credentials, port configuration, security settings*
+
+![Proxy Request Logging](./images/proxy-request-logging.png)  
+*Real-time request logging, incoming requests with timestamps, request body/payload, response status codes, duration metrics, provider identification*
+
+![API Endpoint Mapping](./images/proxy-api-endpoint-mapping.png)  
+*Proxy API endpoints list, methods (GET, POST, etc.), endpoint purposes, provider associations, request/response format*
+
+![Integration Architecture](./images/integration-architecture.png)  
+*System architecture diagram, component relationships, data flow, provider connections, database/storage*
+
 ---
 
 ### 4. **Provider Integrations**
@@ -251,6 +281,20 @@ Origin: https://admin.kgulfhost.com
 }
 ```
 
+#### **20i Cloud Integration Screenshots**
+
+![20i Server Management](./images/20i-server-management.png)  
+*List of provisioned servers, server specifications (CPU, RAM, Storage), server status, IP addresses assigned, resource usage metrics*
+
+![20i Stack Panel White-Label](./images/20i-stack-panel-whitelabel.png)  
+*Customer-facing Stack Panel with company branding/logo, server management interface, white-labeled domain, customer accessible features*
+
+![20i DNS Management](./images/20i-dns-management.png)  
+*DNS records list, custom nameservers (ns1.kgulfhost.com, ns2.kgulfhost.com), domain records, MX records for email, A records for domains*
+
+![20i Account Provisioning](./images/20i-account-creation.png)  
+*Server creation/provisioning form, configuration options, resource allocation, operating system selection, provisioning progress*
+
 #### **4.2 WHM/cPanel (MDMHost Reseller Account)**
 
 **Integration Points:**
@@ -281,6 +325,20 @@ Origin: https://admin.kgulfhost.com
 }
 ```
 
+#### **MDMHost cPanel/WHM Integration Screenshots**
+
+![MDMHost WHM Overview](./images/mdmhost-whm-overview.png)  
+*Master reseller WHM interface, account list/overview, server information, resource allocation summary, administrative controls*
+
+![cPanel White-Label Branding](./images/cpanel-white-label-branding.png)  
+*cPanel with custom branding, company logo in header, custom colors/theme, branded terminology, reseller nameservers configured*
+
+![Reseller Package Management](./images/whmcs-cpanel-packages.png)  
+*cPanel packages in WHMCS, package specifications (bandwidth, domains, etc.), resource limits, features included, package assignment to customers*
+
+![cPanel Account Creation](./images/cpanel-account-provisioning.png)  
+*Account creation form/process, domain assignment, nameserver assignment, email account setup, DNS propagation status*
+
 #### **4.3 TheSSLStore - SSL Certificates**
 
 **Integration Points:**
@@ -307,6 +365,23 @@ Origin: https://admin.kgulfhost.com
   paytype: "recurring",              // Annual renewal billing
 }
 ```
+
+#### **TheSSLStore Integration Screenshots**
+
+![TheSSLStore Integration Setup](./images/thesslstore-integration-setup.png)  
+*TheSSLStore module in WHMCS, integration configuration, certificate product types, API settings, auto-installation configuration*
+
+![SSL Certificate Orders](./images/whmcs-ssl-orders.png)  
+*List of SSL certificate orders, certificate types (Single, Wildcard, Multi-domain), domain names, expiration dates, status*
+
+![Domain Validation Process](./images/ssl-domain-validation.png)  
+*Domain validation interface, validation method options (HTTP, DNS, Email), validation token/challenge, status indicators, completion/verification marks*
+
+![SSL Installation Status](./images/cpanel-ssl-installation.png)  
+*cPanel SSL manager, installed certificates list, certificate details (issuer, expiration, domain), installation status, auto-install configuration*
+
+![SSL Renewal Automation](./images/ssl-renewal-automation.png)  
+*Renewal automation configuration, renewal schedule (days before expiry), auto-renewal enabled status, renewal history log, upcoming renewals list*
 
 #### **4.4 Domain Registration & Reselling**
 
@@ -689,6 +764,26 @@ STEP 5: ONGOING MANAGEMENT
 - **Database Management**: Create and manage databases
 - **Email Settings**: Configure email forwarding and filters
 
+#### **Lagom Client Portal Screenshots**
+
+![Lagom Portal Dashboard](./images/lagom-client-portal-dashboard.png)  
+*Customer portal home screen, company branding/logo, quick stats (active services, invoices due, etc.), featured actions, account welcome message*
+
+![Lagom Service Management](./images/lagom-service-management.png)  
+*List of customer services, service status (Active, Suspended, etc.), service type icons, action buttons (Manage, Renew, Upgrade, etc.), usage display*
+
+![Lagom Billing Portal](./images/lagom-billing-invoices.png)  
+*Invoice list/history, invoice amounts, due dates, payment status, download/print options, payment history*
+
+![Lagom Support Tickets](./images/lagom-support-system.png)  
+*Support ticket submission form, ticket list, ticket status (Open, Closed, Pending, etc.), priority levels, response times*
+
+![Lagom Domain Management](./images/lagom-domain-management.png)  
+*Customer domains list, domain status, expiration dates, DNS management interface, renewal options*
+
+![Lagom Branding Customization](./images/lagom-branding-customization.png)  
+*Branding configuration panel, logo upload, color picker for theme, company name customization, support contact customization*
+
 ### White-Label Customization
 
 - **Branding**: Logo, colors, fonts, and imagery
@@ -744,7 +839,7 @@ STEP 5: ONGOING MANAGEMENT
 
 ---
 
-## Development Workflow
+## 📝 Development Workflow
 
 ### Running the Application
 
@@ -849,7 +944,7 @@ kgulfhosting.com/
 
 ---
 
-## Continuous Integration & Deployment
+## 🔄 Continuous Integration & Deployment
 
 ### Git-Based Workflow
 
@@ -878,7 +973,7 @@ kgulfhosting.com/
 
 ---
 
-## Architecture Highlights
+## 🎓 Architecture Highlights
 
 ### Why This Architecture?
 

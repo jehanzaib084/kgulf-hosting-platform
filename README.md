@@ -784,7 +784,7 @@ STEP 5: ONGOING MANAGEMENT
 
 ---
 
-## 📝 Development Workflow
+## Development Workflow
 
 ### Running the Application
 

@@ -233,20 +233,6 @@ Origin: https://admin.kgulfhost.com
 ![WHMCS Orders Management](./images/whmcs-orders-automation.png)  
 *Active orders list, order status (Pending, Active, Cancelled), customer details, service details, action buttons*
 
-#### **Proxy Server & Architecture Screenshots**
-
-![Proxy Server Configuration](./images/proxy-server-configuration.png)  
-*Proxy server logs/configuration, environment variables setup, provider API credentials, port configuration, security settings*
-
-![Proxy Request Logging](./images/proxy-request-logging.png)  
-*Real-time request logging, incoming requests with timestamps, request body/payload, response status codes, duration metrics, provider identification*
-
-![API Endpoint Mapping](./images/proxy-api-endpoint-mapping.png)  
-*Proxy API endpoints list, methods (GET, POST, etc.), endpoint purposes, provider associations, request/response format*
-
-![Integration Architecture](./images/integration-architecture.png)  
-*System architecture diagram, component relationships, data flow, provider connections, database/storage*
-
 ---
 
 ### 4. **Provider Integrations**
@@ -283,17 +269,12 @@ Origin: https://admin.kgulfhost.com
 
 #### **20i Cloud Integration Screenshots**
 
-![20i Server Management](./images/20i-server-management.png)  
+![20i Dashboard](./images/20i-dashboard.png)  
 *List of provisioned servers, server specifications (CPU, RAM, Storage), server status, IP addresses assigned, resource usage metrics*
 
-![20i Stack Panel White-Label](./images/20i-stack-panel-whitelabel.png)  
-*Customer-facing Stack Panel with company branding/logo, server management interface, white-labeled domain, customer accessible features*
+![20i Manage Hosting](./images/20i-manage-hosting.png)  
 
-![20i DNS Management](./images/20i-dns-management.png)  
-*DNS records list, custom nameservers (ns1.kgulfhost.com, ns2.kgulfhost.com), domain records, MX records for email, A records for domains*
-
-![20i Account Provisioning](./images/20i-account-creation.png)  
-*Server creation/provisioning form, configuration options, resource allocation, operating system selection, provisioning progress*
+![20i DNS Management](./images/20i-stackCp-dashboard.png)  
 
 #### **4.2 WHM/cPanel (MDMHost Reseller Account)**
 

@@ -13,7 +13,7 @@ KGulf Hosting is a comprehensive hosting service platform engineered to deliver 
 - **Multi-Provider Orchestration**: Unified management across 20i, WHM/cPanel, SSL vendors, and domain registrars
 - **White-Label Ecosystem**: Fully customized branding and UI for client-facing experiences
 - **Real-Time Provisioning**: Automated service deployment and lifecycle management
-- **Unified Billing**: Seamless integration with WHMCS for invoicing and payment processing
+- **Unified Billing**: Integration with WHMCS (widely-used third-party billing platform) for invoicing and payment processing
 - **Enterprise Dashboard**: Comprehensive admin panel with real-time analytics
 
 ---
@@ -146,16 +146,15 @@ src/
 
 ---
 
-### 3. **WHMCS Proxy Server - Provider Orchestration**
+### 3. **WHMCS Integration - Provider Orchestration**
 
-**Technology**: Express.js + Axios  
-**Port**: 3001 (Production) / 3000 (Development)  
-**Security**: Helmet, Rate Limiting, CORS, Custom Logging  
+**Note**: WHMCS is a widely-used third-party billing and automation platform for web hosting companies. This project does not create or modify WHMCS itself but integrates with it through a custom-built proxy server to enable seamless communication with Payload CMS and provider APIs.
+
 
 #### **Core Responsibilities:**
 
 **A. Product Synchronization**
-- Maps Payload CMS products to WHMCS product groups
+- Maps Payload CMS products to WHMCS product groups (via custom proxy integration)
 - Handles pricing synchronization across billing cycles
 - Manages product activation/deactivation
 - Supports multiple product types:
@@ -362,12 +361,12 @@ Origin: https://admin.kgulfhost.com
 
 ---
 
-### 5. **Payment & Billing System (WHMCS)**
+### 5. **Payment & Billing System (WHMCS Integration)**
 
 **Integration Architecture:**
 
 ```
-Payload CMS ←→ WHMCS Proxy ←→ WHMCS Core
+Payload CMS ←→ Custom WHMCS Proxy ←→ WHMCS Core (Third-Party Platform)
                     ↓
           Payment Gateway Integration
                (Multiple Providers)
@@ -832,7 +831,7 @@ kgulfhosting.com/
 │   ├── assets/
 │   ├── icons/
 │   └── images/
-├── whmcs-proxy-server/              # Express proxy service
+├── whmcs-proxy-server/              # Custom Express proxy service for WHMCS integration
 │   ├── server.js                    # Main application
 │   ├── whmcsService.js              # API integration logic
 │   ├── logger.js                    # Logging utilities
@@ -851,7 +850,7 @@ kgulfhosting.com/
 ### Real-Time Data Synchronization
 
 **Bidirectional Sync:**
-- Payload CMS ↔ WHMCS: Product definitions and pricing
+- Payload CMS ↔ Custom WHMCS Proxy ↔ WHMCS (Third-Party Platform): Product definitions and pricing
 - WHMCS ↔ Provider APIs: Service provisioning status
 - Provider ↔ Next.js Frontend: Real-time service status
 - Email System: Automated notifications and alerts
@@ -939,6 +938,7 @@ kgulfhosting.com/
 | CMS | Payload 3.49 | Headless, MongoDB native, developer-friendly |
 | Database | MongoDB | Flexible schema, horizontal scaling |
 | Proxy | Express.js | Lightweight, fast, mature ecosystem |
+| Billing | WHMCS (Third-Party) | Widely-used hosting billing platform, integrated via custom proxy |
 | Storage | S3 | Cost-effective, reliable, widely adopted |
 | Email | Nodemailer | Flexible, supports multiple transports |
 | Styling | Tailwind CSS | Utility-first, highly customizable |

@@ -344,23 +344,6 @@ Origin: https://admin.kgulfhost.com
 }
 ```
 
-#### **TheSSLStore Integration Screenshots**
-
-![TheSSLStore Integration Setup](./images/thesslstore-integration-setup.png)  
-*TheSSLStore module in WHMCS, integration configuration, certificate product types, API settings, auto-installation configuration*
-
-![SSL Certificate Orders](./images/whmcs-ssl-orders.png)  
-*List of SSL certificate orders, certificate types (Single, Wildcard, Multi-domain), domain names, expiration dates, status*
-
-![Domain Validation Process](./images/ssl-domain-validation.png)  
-*Domain validation interface, validation method options (HTTP, DNS, Email), validation token/challenge, status indicators, completion/verification marks*
-
-![SSL Installation Status](./images/cpanel-ssl-installation.png)  
-*cPanel SSL manager, installed certificates list, certificate details (issuer, expiration, domain), installation status, auto-install configuration*
-
-![SSL Renewal Automation](./images/ssl-renewal-automation.png)  
-*Renewal automation configuration, renewal schedule (days before expiry), auto-renewal enabled status, renewal history log, upcoming renewals list*
-
 #### **4.4 Domain Registration & Reselling**
 
 **Integration Points:**
@@ -744,23 +727,8 @@ STEP 5: ONGOING MANAGEMENT
 
 #### **Lagom Client Portal Screenshots**
 
-![Lagom Portal Dashboard](./images/lagom-client-portal-dashboard.png)  
+![Lagom Portal Dashboard](./images/lagom-theme-user-dashboard.png)  
 *Customer portal home screen, company branding/logo, quick stats (active services, invoices due, etc.), featured actions, account welcome message*
-
-![Lagom Service Management](./images/lagom-service-management.png)  
-*List of customer services, service status (Active, Suspended, etc.), service type icons, action buttons (Manage, Renew, Upgrade, etc.), usage display*
-
-![Lagom Billing Portal](./images/lagom-billing-invoices.png)  
-*Invoice list/history, invoice amounts, due dates, payment status, download/print options, payment history*
-
-![Lagom Support Tickets](./images/lagom-support-system.png)  
-*Support ticket submission form, ticket list, ticket status (Open, Closed, Pending, etc.), priority levels, response times*
-
-![Lagom Domain Management](./images/lagom-domain-management.png)  
-*Customer domains list, domain status, expiration dates, DNS management interface, renewal options*
-
-![Lagom Branding Customization](./images/lagom-branding-customization.png)  
-*Branding configuration panel, logo upload, color picker for theme, company name customization, support contact customization*
 
 ### White-Label Customization
 

@@ -308,17 +308,14 @@ Origin: https://admin.kgulfhost.com
 
 #### **MDMHost cPanel/WHM Integration Screenshots**
 
-![MDMHost WHM Overview](./images/mdmhost-whm-overview.png)  
+![MDMHost WHM Overview](./images/whm-dashboard.png)  
 *Master reseller WHM interface, account list/overview, server information, resource allocation summary, administrative controls*
 
-![cPanel White-Label Branding](./images/cpanel-white-label-branding.png)  
-*cPanel with custom branding, company logo in header, custom colors/theme, branded terminology, reseller nameservers configured*
+![WHM Reseller Package Management](./images/whm-reseller-menu.png)  
 
-![Reseller Package Management](./images/whmcs-cpanel-packages.png)  
-*cPanel packages in WHMCS, package specifications (bandwidth, domains, etc.), resource limits, features included, package assignment to customers*
+![cPanel Overview](./images/cpanel-dashboard.png)  
 
-![cPanel Account Creation](./images/cpanel-account-provisioning.png)  
-*Account creation form/process, domain assignment, nameserver assignment, email account setup, DNS propagation status*
+![cPanel Node.js App Deployed](./images/cpanel-nodejs-app.png)  
 
 #### **4.3 TheSSLStore - SSL Certificates**
 
